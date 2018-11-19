@@ -29,14 +29,16 @@ console.log(min);
 
 
 // 1.3. Average number of values
- var arr [underfinded];
- var sum = 0;
- 
- for (i = 0; i < arr.length; i++ ) {
- 	sum += array[i];
- return sum = sum / arr.length;
- }
-console.log(sum);
+function average(arr) {
+ let sum = 0;
+ for (let i = 0; i < arr.length; i++) {
+	 sum = sum + arr[i];
+  }
+  return sum/arr.length;
+}
+const arr = [1, 4, 2];
+const averageArr = average(arr);
+console.log(averageArr);
 
 
 // 2. Recursive function
