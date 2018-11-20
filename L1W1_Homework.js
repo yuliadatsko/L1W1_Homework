@@ -115,12 +115,15 @@ function makeTriagle() {
  makeTriagle();
 
  // 5. Fibonacci sequence
- var num = prompt("Enter your number");
- function fibonacci(num) {
- if (num <= 1) { 
- 	return 1;
- }
-  return fibonacci(num - 1) + fibonacci(num - 2);
+function fibonacci(num) {
+  var a = 1,
+    b = 1;
+  for (var i = 3; i <= num; i++) {
+    var c = a + b;
+    a = b;
+    b = c;
+  }
+  return b;
 }
 
-console.log(fibonacci(num));
+alert( fibonacci(3) );
